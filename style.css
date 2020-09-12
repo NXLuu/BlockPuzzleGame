@@ -1,1 +1,28 @@
-﻿
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: Grandstander;
+}
+
+#name-game {
+    font-size: 35px;
+    padding-right: 20px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.center-flex-item {
+    align-self: center;
+}
+
+.title-container {
+    margin: 20px;
+}
+
+.fa-gamepad-alt {
+    font-size: 42px;
+    text-align: center;
+}
