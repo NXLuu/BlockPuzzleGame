@@ -1,9 +1,16 @@
-﻿* {
+﻿@import url(https://fonts.googleapis.com/css?family=Akronim);
+
+* {
     padding: 0;
     margin: 0;
-    font-family: Grandstander;
+    /* overflow: hidden; */
 }
 
+body {
+    font-family: Grandstander;
+    background-color: white;
+
+}
 #name-game {
     font-size: 35px;
     padding-right: 20px;
@@ -12,6 +19,11 @@
 .container-flex {
     display: flex;
     justify-content: center;
+}
+
+.flex-collumn {
+    flex-direction: column;
+    align-items: center;
 }
 
 .center-flex-item {
@@ -25,4 +37,150 @@
 .fa-gamepad-alt {
     font-size: 42px;
     text-align: center;
+}
+
+#border-board {
+    border: 20px solid #000000;
+    border-radius: 5px;
+    box-shadow: 10px -5px 10px #c3c3c3;
+    margin: 0;
+    padding-top: 10px;
+    padding: 0;
+}
+
+#game-board {
+    overflow: hidden;
+    position: relative;
+    border-collapse: collapse;
+}
+
+tr {
+    border: 0px;
+}
+
+td {
+    width: 54;
+    height: 54;
+    margin: 0;
+    border: 0;
+}
+
+.active {
+}
+
+.block {
+    width: 52;
+    height: 52;
+    background-color: gray;
+    padding: 0;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin: 0;
+}
+
+.puzzel {
+    position: absolute;
+    display: inline-block;
+}
+
+#score-board {
+    position: fixed;
+    text-align: center;
+    width: 200px;
+    height: 149px;
+    top: 67px;
+    right: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #cb9e70;
+    display: flex;
+    border-radius: 7px;
+}
+
+#score-title {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none white;
+    position: absolute;
+    top: -20px;
+}
+
+#score {
+    font-size: 60px;
+}
+
+.fire {
+	/* margin: 50px auto; */
+	width: 80%;
+	max-width: 1000px;
+	height: 50px;
+
+	background-position: center center;
+	background-size: 1000px 200px;
+	border-radius: 10px;
+	font-family: 'Akronim';
+    text-align: center;
+	vertical-align: middle;
+
+}
+.fire:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.Blazing {
+	display: inline-block;
+	margin: 0;
+
+    color: black;
+    font-size: 30px;
+	line-height: 50px;
+	min-width: 50px;
+	outline: none;
+	vertical-align: middle;
+    
+	text-shadow:
+        0 3px 20px red,
+        0 0 20px red,
+		0 0 10px orange,
+		4px -5px 6px yellow,
+		-4px -10px 10px yellow,
+		0 -10px 30px yellow;
+	animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+	0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 0 10px orange,
+		0 0 0 yellow,
+		0 0 5px yellow,
+		-2px -5px 5px yellow,
+		4px -10px 10px yellow; }
+	25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
+		0 0 20px orange,
+		0 0 5px yellow,
+		-2px -5px 5px yellow,
+		3px -10px 10px yellow,
+		-4px -15px 20px yellow; }
+	50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 -5px 10px orange,
+		-2px -5px 5px yellow,
+		3px -10px 10px yellow,
+		-4px -15px 20px yellow,
+		2px -20px 30px rgba(255,255,0,0.5); }
+	75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 -5px 10px orange,
+		3px -5px 5px yellow,
+		-4px -10px 10px yellow,
+		2px -20px 30px rgba(255,255,0,0.5),
+		0px -25px 40px rgba(255,255,0,0)}
+	100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 0 10px orange,
+		0 0 0 yellow,
+		0 0 5px yellow,
+		-2px -5px 5px yellow,
+		4px -10px 10px yellow; }
 }

@@ -21,10 +21,28 @@
     <title>Block Puzzel Game</title>
 </head>
 <body>
-    <div class="container-flex title-container">
-       <h1 id="name-game">Puzzel Game</h1>
-        <i class="fas fa-gamepad-alt"></i> 
-    </div>
+    <div class="container-flex flex-collumn">
+        <div class="container-flex title-container">
+        <h1 id="name-game">Puzzel Game</h1>
+            <i class="fas fa-gamepad-alt"></i> 
+        </div>
     
+        <div id="border-board"></div>
+    </div>      
+    
+       
+        <div id="score-board">
+            <span id="score-title" class="dark fire">
+                <h1 class="Blazing" contenteditable="true">
+                    Your Score
+                </h1>
+            </span>
+            <span id="score">0</span>
+        </div>
+
+       
+    
+    <script type="module" src="component/app.js"></script>
+    <script type="module" src="component/puzzel.js"></script>
 </body>
 </html>
